@@ -1,0 +1,29 @@
+{
+    "name": "fromholdio/silverstripe-superlinker-targets",
+    "type": "silverstripe-vendormodule",
+    "description": "A SilverStripe module providing basic link/target data objects built using the Superlinker foundation",
+    "license": "BSD-3-Clause",
+    "keywords": ["silverstripe", "link", "superlinker", "cta", "button"],
+    "homepage": "https://github.com/fromholdio/silverstripe-superlinker-targets",
+    "support": {
+        "issues": "https://github.com/fromholdio/silverstripe-superlinker-targets/issues"
+    },
+    "authors": [{
+        "name": "Luke Fromhold",
+        "homepage": "https://fromhold.io"
+    }],
+    "require": {
+        "php": ">=5.6",
+        "silverstripe/vendor-plugin": "^1.0",
+        "silverstripe/cms": "^4.0",
+        "fromholdio/silverstripe-globalanchors": "^1.0.1",
+        "fromholdio/silverstripe-superlinker": "^1.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fromholdio\\SuperLinkerTargets\\": "src/"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
