@@ -10,9 +10,11 @@ class Target extends SuperLink
     private static $singular_name = 'Target';
     private static $plural_name = 'Targets';
 
-    private static $enable_custom_link_text = false;
+    private static $settings = [
+        'link_text' => false
+    ];
 
     private static $summary_fields = [
-        'Link' => 'URL'
+        'URL'
     ];
 }

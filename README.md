@@ -1,5 +1,9 @@
 # silverstripe-superlinker-targets
 
+Use master/v2.x (compatible with SS 4 & 5).
+
+This branch is under active development. It **will** change and break, likely including namespaces.
+
 A SilverStripe module providing basic link/target data objects built using the Superlinker foundation
 
 ## Requirements
