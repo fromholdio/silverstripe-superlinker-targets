@@ -13,7 +13,7 @@
         "homepage": "https://fromhold.io"
     }],
     "require": {
-        "fromholdio/silverstripe-superlinker": "3.x-dev"
+        "fromholdio/silverstripe-superlinker": "^3.0.0"
     },
     "autoload": {
         "psr-4": {
