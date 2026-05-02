@@ -81,9 +81,12 @@ public function getCMSFields(): FieldList
 ### Example 1: Footer Links
 
 ```php
-use SilverStripe\SiteConfig\SiteConfig;
+namespace App\Extensions;
 
-class SiteConfigExtension extends DataExtension
+use Fromholdio\SuperLinkerTargets\Model\Target;
+use SilverStripe\Core\Extension;
+
+class SiteConfigExtension extends Extension
 {
     private static $has_many = [
         'FooterLinks' => Target::class
@@ -146,7 +149,12 @@ class ResourcePage extends Page
 ### Example 3: Social Media Links
 
 ```php
-class SiteConfigExtension extends DataExtension
+namespace App\Extensions;
+
+use Fromholdio\SuperLinkerTargets\Model\Target;
+use SilverStripe\Core\Extension;
+
+class SiteConfigExtension extends Extension
 {
     private static $has_many = [
         'SocialLinks' => Target::class
@@ -224,9 +232,9 @@ namespace App\Extensions;
 
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 
-class TargetExtension extends DataExtension
+class TargetExtension extends Extension
 {
     private static $db = [
         'CustomField' => 'Varchar(255)'
